@@ -64,11 +64,8 @@ KindKart/
 
 ---
 
-## 📸 Screenshots (optional)
-_Add screenshots of your homepage, donation form, or dashboard here._
+## 📸 Screenshots 
 
-Example:
-```
 ![Home Page](screenshots/homepage.jpeg)
 ![Login Page](screenshots/loginpage.jpeg)
 ![Donor Page](screenshots/donorpage.jpeg)
@@ -80,7 +77,7 @@ Example:
 ![Learn More Page](screenshots/learnmore.jpeg)
 ![How it works](screenshots/howitworks.jpeg)
 ![Ready to Spread Kindness](screenshots/readytospread_kindness.jpeg)
-```
+
 
 ---
 
