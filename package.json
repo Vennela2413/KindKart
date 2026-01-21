@@ -3,5 +3,14 @@
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "start": "npm run dev"
   }
 }
