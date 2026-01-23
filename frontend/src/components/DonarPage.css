@@ -1,0 +1,46 @@
+.donar-hero {
+  background: linear-gradient(135deg, #fffaf0, #f7fff5);
+  padding: 28px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.donar-hero img {
+  width: 96px;
+  height: 96px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.donar-hero h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #2d1b4e;
+}
+
+.donar-hero p {
+  margin: 6px 0 0 0;
+  color: #546;
+}
+
+.donation-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.donation-card {
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(45,27,78,0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.donation-card:hover { transform: translateY(-6px); box-shadow: 0 18px 45px rgba(45,27,78,0.07); }
+
+.donation-card h4 { margin: 0 0 6px 0; color: #2d1b4e; }
+.donation-card small { color: #768; }

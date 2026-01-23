@@ -1,0 +1,73 @@
+/* DashboardLogin.css */
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0fff4, #e6fffa);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-page h2 {
+  font-size: 2rem;
+  color: #2c7a7b;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-page form {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: left;
+}
+
+.login-page label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.login-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #a0aec0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-page input:focus {
+  border-color: #38b2ac;
+  box-shadow: 0 0 5px rgba(56, 178, 172, 0.3);
+  outline: none;
+}
+
+.login-page button {
+  width: 100%;
+  background: #38b2ac;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-page button:hover {
+  background: #319795;
+}
+
+.login-page button:active {
+  transform: scale(0.98);
+}
