@@ -20,7 +20,8 @@ function AvailableDonations() {
     try {
       const response = await fetch(`${API_URL}/donations`);
       const data = await response.json();
-      setDonations(data.filter(d => d.status === "pending"));
+      const now = new Date();
+      setDonations(data.filter(d => d.status === "pending" && (!d.expiryTime || new Date(d.expiryTime) > now)));
       setError("");
     } catch (err) {
       setError("Failed to load donations");
@@ -85,6 +86,7 @@ const collectDonation = async (donationId) => {
                 <p><strong>📦 Quantity:</strong> {donation.quantity} portions</p>
                 <p><strong>📍 Location:</strong> {donation.location}</p>
                 <p><strong>⏰ Posted:</strong> {new Date(donation.createdAt).toLocaleDateString()}</p>
+                {donation.expiryTime && <p><strong>⏰ Expires:</strong> {new Date(donation.expiryTime).toLocaleString()}</p>}
               </div>
               <button
                 className="btn-collect"

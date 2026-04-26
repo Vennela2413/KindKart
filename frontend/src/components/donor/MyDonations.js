@@ -68,8 +68,8 @@ function MyDonations() {
             <div key={donation._id} className="donation-card">
               <div className="donation-header">
                 <h3>{donation.foodName}</h3>
-                <span className={`status-badge ${donation.status === 'collected' ? 'collected' : 'pending'}`}>
-                  {donation.status.charAt(0).toUpperCase() + donation.status.slice(1)}
+                <span className={`status-badge ${donation.status === 'collected' ? 'collected' : (donation.status === 'pending' && donation.expiryTime && new Date(donation.expiryTime) < new Date() ? 'expired' : 'pending')}`}>
+                  {donation.status === 'collected' ? 'Collected' : (donation.status === 'pending' && donation.expiryTime && new Date(donation.expiryTime) < new Date() ? 'Expired' : donation.status.charAt(0).toUpperCase() + donation.status.slice(1))}
                 </span>
               </div>
 
@@ -77,6 +77,7 @@ function MyDonations() {
                 <p><strong>📦 Quantity:</strong> {donation.quantity} portions</p>
                 <p><strong>📍 Location:</strong> {donation.location}</p>
                 <p><strong>⏰ Posted:</strong> {new Date(donation.createdAt).toLocaleString()}</p>
+                {donation.expiryTime && <p><strong>⏰ Expires:</strong> {new Date(donation.expiryTime).toLocaleString()}</p>}
               </div>
             </div>
           ))}
