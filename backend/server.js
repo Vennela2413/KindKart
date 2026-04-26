@@ -6,7 +6,7 @@ import userRoutes from "./routes/user.js";
 import donationRoutes from "./routes/donation.js";
 import notificationRoutes from "./routes/notifications.js";
 
-dotenv.config({ path: './mongo.env' }); // ✅ Loads mongo.env file
+dotenv.config(); // Loads from .env file or environment variables
 
 const app = express();
 const PORT = process.env.PORT || 5000;
