@@ -55,8 +55,8 @@ function AdminDashboard() {
   const fetchStats = async () => {
     try {
       const [donations, users] = await Promise.all([
-        fetch("http://localhost:5000/api/donations").then(r => r.json()),
-        fetch("http://localhost:5000/api/users").then(r => r.json())
+        fetch("https://kindkart-2.onrender.com/api/donations").then(r => r.json()),
+        fetch("https://kindkart-2.onrender.com/api/users").then(r => r.json())
       ]);
 
       const totalDonations = donations.length;

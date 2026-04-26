@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../ngo/NGOStyles.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://kindkart-2.onrender.com/api";
 
 function ImpactReports() {
   const [data, setData] = useState(null);

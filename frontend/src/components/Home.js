@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://kindkart-2.onrender.com/api";
 
 function Home() {
   const [stats, setStats] = useState({ donations: 0, meals: 0, ngos: 0, donors: 0 });

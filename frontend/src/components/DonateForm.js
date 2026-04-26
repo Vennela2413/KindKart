@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DonateForm.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://kindkart-2.onrender.com/api";
 
 function DonateForm() {
   const navigate = useNavigate();

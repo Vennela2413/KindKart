@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Toast from "../Toast";
 import "../ngo/NGOStyles.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://kindkart-2.onrender.com/api";
 
 function MyDonations() {
   const [donations, setDonations] = useState([]);

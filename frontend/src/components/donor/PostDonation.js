@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Toast from "../Toast";
 import "./DonationStyles.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://kindkart-2.onrender.com/api";
 
 function PostDonation() {
   const [formData, setFormData] = useState({
